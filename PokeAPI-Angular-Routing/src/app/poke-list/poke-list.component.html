@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="input" (input)="filterPokes()"/>
+<div *ngFor="let p of pokemonsFiltered">
+    <a routerLink="/pokemon/{{p.id}}">{{p.name}}</a>
+</div>
